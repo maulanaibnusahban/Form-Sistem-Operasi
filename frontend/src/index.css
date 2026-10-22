@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-radius: 0 !important;
+  }
+
+  /* Khusus bentuk geometris lingkaran brutalist */
+  .brutalist-circle {
+    border-radius: 9999px !important;
+  }
+
+  body {
+    background-color: #FFFDF5;
+    background-image: 
+      linear-gradient(to right, rgba(0, 0, 0, 0.08) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 2px, transparent 2px);
+    background-size: 48px 48px;
+    color: #000000;
+    font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Override gaya autofill browser agar input tetap putih dan teks hitam */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #000000 !important;
+    box-shadow: 0 0 0 1000px #ffffff inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+/* Custom Neo-Brutalism Classes */
+.neo-box {
+  border: 3px solid #000000;
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-box-thick {
+  border: 4px solid #000000;
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.neo-input {
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 120ms ease-in-out;
+}
+
+.neo-input:focus {
+  outline: none;
+  background-color: #FFFDF0;
+  box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.neo-btn {
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 120ms ease-in-out;
+}
+
+.neo-btn:hover:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0px 0px #000000;
+}
+
+.neo-btn:active:not(:disabled) {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.neo-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: 2px 2px 0px 0px #000000;
+  transform: translate(3px, 3px);
+}
+
+/* Animasi Marquee Teks Bergerak */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-content {
+    animation: none;
+    transform: none;
+  }
+}
