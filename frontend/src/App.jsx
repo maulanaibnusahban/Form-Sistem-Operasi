@@ -170,7 +170,9 @@ export default function App() {
             </h1>
 
             <div className="border-t-[3px] border-black pt-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <p className="font-mono text-xs md:text-sm font-bold uppercase text-black">RESPONDEN MAHASISWA</p>
+              <p className="font-mono text-xs md:text-sm font-bold uppercase text-black">
+                Seminar Nasional Teknik Informatika (SEMNASTI)
+              </p>
               <div className="flex items-center gap-1.5 self-start sm:self-auto">
                 <span
                   className={`w-3 h-3 border border-black ${
@@ -286,7 +288,7 @@ export default function App() {
         {/* FOOTER BRUTALIST */}
         <footer className="mt-10 font-mono text-xs text-neutral-600 text-center flex flex-col items-center gap-1">
           <p className="font-bold text-black uppercase tracking-wider">Maulana Ibnu Sahban &copy; 2026</p>
-          <p className="text-[11px]">Form Pendaftaan Mahasiwa Baru</p>
+          <p className="text-[11px]">Form Seminar Nasional Teknik Informatika (SEMNASTI)</p>
         </footer>
       </div>
     </div>

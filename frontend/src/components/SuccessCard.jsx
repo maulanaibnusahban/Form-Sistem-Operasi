@@ -19,7 +19,7 @@ export default function SuccessCard({ data, onReset }) {
           TERIMA KASIH, DATA DITERIMA!
         </h2>
         <p className="font-mono text-xs md:text-sm text-neutral-700">
-          Data responden Anda telah berhasil diverifikasi dan disimpan ke dalam database. Simpan ringkasan pendaftaran berikut:
+          Anda telah berhasil mendaftar Seminar Nasional Teknik Informatika (SEMNASTI) berikut ringkasan pendaftaran Anda:
         </p>
       </div>
 
@@ -59,7 +59,7 @@ export default function SuccessCard({ data, onReset }) {
         onClick={onReset}
         className="w-full py-3.5 px-6 bg-[#B8F500] hover:bg-[#a6de00] text-black font-black text-base md:text-lg uppercase tracking-wider border-[3px] border-black shadow-[6px_6px_0px_0px_#000000] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_#000000] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all duration-150 cursor-pointer flex items-center justify-center gap-2"
       >
-        <span>DAFTAR LAGI (RESET FORM)</span>
+        <span>SELESAI</span>
         <span className="text-xl">↺</span>
       </button>
     </div>
